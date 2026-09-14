@@ -10,6 +10,10 @@ export default defineConfig({
   description: 'Portfolio of industrial designer Salomé Doucet.',
   lang: 'en',
   cleanUrls: true,
+  // Coolify's Nixpacks static preset copies /app/dist; VitePress defaults to
+  // .vitepress/dist. Emit to ./dist so the deploy COPY finds it. Netlify uses
+  // this too — just set publish dir to `dist`.
+  outDir: 'dist',
   srcExclude: ['AGENTS.md', 'PROJECT.md', 'README.md'],
   themeConfig: {
     // ▸ Salomé: your links live here. Update them and the footer/contact follow.
