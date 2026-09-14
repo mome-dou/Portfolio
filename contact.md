@@ -14,8 +14,7 @@ cover: /img/contact.jpg
 
 [salome.doucet@gmail.com](mailto:salome.doucet@gmail.com)
 
-<!-- Update these links to your profiles. -->
-[Instagram](https://www.instagram.com/) &amp; [LinkedIn](https://www.linkedin.com/)
+[Instagram](https://www.instagram.com/salome_doucet_/) &amp; [LinkedIn](https://www.linkedin.com/in/salom%C3%A9-doucet-06988717a/)
 
 </div>
 

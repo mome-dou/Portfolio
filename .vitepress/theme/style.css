@@ -243,9 +243,14 @@ hr {
   margin-top: 2rem;
 }
 
-.site-footer .ig {
+.site-footer .socials {
   position: absolute;
   right: var(--gutter);
+  display: inline-flex;
+  gap: 0.9rem;
+}
+
+.site-footer .socials a {
   color: var(--tan);
   display: inline-flex;
 }
@@ -274,7 +279,7 @@ hr {
     gap: 1rem;
   }
 
-  .site-footer .ig {
+  .site-footer .socials {
     position: static;
   }
 }

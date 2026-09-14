@@ -14,8 +14,8 @@ export default defineConfig({
   themeConfig: {
     // ▸ Salomé: your links live here. Update them and the footer/contact follow.
     email: 'salome.doucet@gmail.com',
-    instagram: 'https://www.instagram.com/', // TODO: set the real profile URL
-    linkedin: 'https://www.linkedin.com/', // TODO: set the real profile URL
+    instagram: 'https://www.instagram.com/salome_doucet_/',
+    linkedin: 'https://www.linkedin.com/in/salom%C3%A9-doucet-06988717a/',
   },
   // Per-page SEO: reads `title`, `description` and `cover` from each page's
   // frontmatter and emits social-share tags. Non-engineer surface = frontmatter.

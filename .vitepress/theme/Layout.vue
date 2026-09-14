@@ -13,6 +13,7 @@ const nav = [
 ]
 const isActive = (m: (p: string) => boolean) => m(route.path)
 const isProject = () => route.path.startsWith('/work/')
+const year = new Date().getFullYear()
 </script>
 
 <template>
@@ -39,21 +40,36 @@ const isProject = () => route.path.startsWith('/work/')
     </main>
 
     <footer class="site-footer wrap">
-      <span>All rights reserved. © 2025 by Salomé Doucet</span>
-      <a
-        v-if="theme.instagram"
-        class="ig"
-        :href="theme.instagram"
-        target="_blank"
-        rel="noopener"
-        aria-label="Instagram"
-      >
-        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6">
-          <rect x="3" y="3" width="18" height="18" rx="5" />
-          <circle cx="12" cy="12" r="4" />
-          <circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none" />
-        </svg>
-      </a>
+      <span>All rights reserved. © {{ year }} by Salomé Doucet</span>
+      <div class="socials">
+        <a
+          v-if="theme.instagram"
+          :href="theme.instagram"
+          target="_blank"
+          rel="noopener"
+          aria-label="Instagram"
+        >
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6">
+            <rect x="3" y="3" width="18" height="18" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none" />
+          </svg>
+        </a>
+        <a
+          v-if="theme.linkedin"
+          :href="theme.linkedin"
+          target="_blank"
+          rel="noopener"
+          aria-label="LinkedIn"
+        >
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6">
+            <rect x="3" y="3" width="18" height="18" rx="5" />
+            <line x1="7" y1="10" x2="7" y2="17" />
+            <circle cx="7" cy="7" r="1" fill="currentColor" stroke="none" />
+            <path d="M11 17v-4a2.5 2.5 0 0 1 5 0v4M11 10.5V17" />
+          </svg>
+        </a>
+      </div>
     </footer>
   </div>
 </template>
