@@ -143,10 +143,12 @@ hr {
 
 /* -------------------------------------------------------------- project --- */
 
+/* Hero shows the whole image (never cropped), capped so it doesn't fill the
+   screen on desktop. Small/narrow screens just scale to full width. */
 .project-hero {
   width: 100%;
-  height: clamp(320px, 60vh, 640px);
-  object-fit: cover;
+  max-height: 70vh;
+  object-fit: contain;
 }
 
 .project-body {
