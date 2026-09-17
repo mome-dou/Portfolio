@@ -6,7 +6,7 @@ cover: /img/contact.jpg
 
 <div class="contact">
 
-<img class="contact-img" src="/img/contact.jpg" alt="" />
+<img class="contact-img" src="/img/contact.jpg" alt="Salomé Doucet" />
 
 <div class="contact-text">
 
