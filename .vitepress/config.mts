@@ -32,6 +32,8 @@ export default defineConfig({
     const image = fm.cover ? `${SITE}${fm.cover}` : `${SITE}/img/og-default.jpg`
 
     const head: HeadConfig[] = (fm.head ??= [])
+    // Preload the above-the-fold hero so it becomes the LCP paint sooner.
+    if (fm.cover) head.push(['link', { rel: 'preload', as: 'image', href: fm.cover }])
     head.push(
       ['meta', { name: 'description', content: description }],
       ['meta', { property: 'og:type', content: 'website' }],
