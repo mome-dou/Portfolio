@@ -14,6 +14,7 @@ export default defineConfig({
   // .vitepress/dist. Emit to ./dist so the deploy COPY finds it. Netlify uses
   // this too — just set publish dir to `dist`.
   outDir: 'dist',
+  sitemap: { hostname: SITE },
   srcExclude: ['AGENTS.md', 'PROJECT.md', 'README.md'],
   themeConfig: {
     // ▸ Salomé: your links live here. Update them and the footer/contact follow.
