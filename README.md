@@ -181,15 +181,15 @@ Two site-wide settings live in `.vitepress/config.mts`:
 
 ## 7. Publishing
 
-The site is hosted on Netlify. To create the finished files yourself, run:
+The site is hosted on GitHub Pages. To create the finished files yourself, run:
 
 ```bash
-npm run docs:build      # builds the site into .vitepress/dist
+npm run docs:build      # builds the site into dist
 npm run docs:preview    # preview that finished build locally
 ```
 
-Once connected to Netlify, saving your changes to the project's Git repository
-will publish them automatically.
+Saving your changes to the project's Git repository publishes them
+automatically via GitHub Pages.
 
 ---
 
