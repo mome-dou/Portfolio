@@ -4,8 +4,16 @@ import { defineConfig, type HeadConfig } from 'vitepress'
 // shared links show a title, description and preview image.
 // ▸ Set this to the real domain before launch.
 const SITE = 'https://salomedoucet.com'
+// GitHub Pages subpath (see `base` below). Reset to '/' for the custom domain.
+const BASE = '/Portfolio/'
 
 export default defineConfig({
+  // TEMPORARY: served as a GitHub Pages project site at
+  // mome-dou.github.io/Portfolio/, so assets/links must resolve under that
+  // subpath.
+  // ▸ TODO before launch: when moving to the salomedoucet.com custom domain
+  //   (served at root), set this back to '/' — otherwise every asset 404s.
+  base: BASE,
   title: 'Salomé Doucet | Portfolio',
   description: 'Portfolio of industrial designer Salomé Doucet.',
   lang: 'en',
@@ -34,7 +42,7 @@ export default defineConfig({
 
     const head: HeadConfig[] = (fm.head ??= [])
     // Preload the above-the-fold hero so it becomes the LCP paint sooner.
-    if (fm.cover) head.push(['link', { rel: 'preload', as: 'image', href: fm.cover }])
+    if (fm.cover) head.push(['link', { rel: 'preload', as: 'image', href: `${BASE}${fm.cover}`.replace(/\/{2,}/g, '/') }])
     head.push(
       ['meta', { name: 'description', content: description }],
       ['meta', { property: 'og:type', content: 'website' }],

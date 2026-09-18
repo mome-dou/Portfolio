@@ -4,6 +4,10 @@ description: Salomé Doucet is a French industrial designer based in Copenhagen.
 cover: /img/portrait.jpg
 ---
 
+<script setup>
+import { withBase } from 'vitepress'
+</script>
+
 <!-- Two columns: your text on the left, portrait on the right.
      Edit the paragraphs freely. Keep the blank lines between them. -->
 
@@ -21,7 +25,7 @@ I am always open to new opportunities to apply my skills in an environment where
 
 </div>
 
-<img class="about-portrait" src="/img/portrait.jpg" alt="Salomé Doucet" />
+<img class="about-portrait" :src="withBase('/img/portrait.jpg')" alt="Salomé Doucet" />
 
 </div>
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useData } from 'vitepress'
+import { useData, withBase } from 'vitepress'
 import { computed } from 'vue'
 
 const { frontmatter } = useData()
@@ -21,7 +21,7 @@ const gallery = computed(() =>
   <article class="project">
     <img
       class="project-hero"
-      :src="frontmatter.cover"
+      :src="withBase(frontmatter.cover)"
       :alt="frontmatter.title"
       fetchpriority="high"
       decoding="async"
@@ -36,7 +36,7 @@ const gallery = computed(() =>
         <img
           v-for="(img, i) in gallery"
           :key="i"
-          :src="img.src"
+          :src="withBase(img.src)"
           :alt="img.alt"
           loading="lazy"
           decoding="async"

@@ -4,9 +4,13 @@ description: Get in touch with industrial designer Salomé Doucet.
 cover: /img/contact.jpg
 ---
 
+<script setup>
+import { withBase } from 'vitepress'
+</script>
+
 <div class="contact">
 
-<img class="contact-img" src="/img/contact.jpg" alt="Salomé Doucet" />
+<img class="contact-img" :src="withBase('/img/contact.jpg')" alt="Salomé Doucet" />
 
 <div class="contact-text">
 

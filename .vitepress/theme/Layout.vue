@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useData, useRoute } from 'vitepress'
+import { useData, useRoute, withBase } from 'vitepress'
 import Home from './components/Home.vue'
 import Project from './components/Project.vue'
 
@@ -19,12 +19,12 @@ const year = new Date().getFullYear()
 <template>
   <div class="site">
     <header class="site-header wrap">
-      <a class="wordmark" href="/">Salomé Doucet | Portfolio</a>
+      <a class="wordmark" :href="withBase('/')">Salomé Doucet | Portfolio</a>
       <nav class="site-nav">
         <a
           v-for="item in nav"
           :key="item.link"
-          :href="item.link"
+          :href="withBase(item.link)"
           :class="{ active: isActive(item.match) }"
           >{{ item.text }}</a
         >
