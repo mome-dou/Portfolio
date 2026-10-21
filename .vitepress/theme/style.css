@@ -13,7 +13,7 @@
   --sage: #a5baad; /* project titles, headings, captions */
   --tan: #c9bda5; /* nav, footer, CV headings, hairlines */
   --ink: #787268; /* body text */
-  --bg: #ffffff;
+  --bg: #dbdbdb;
 
   /* Type */
   --font: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -37,7 +37,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 50;
 }
 
 img {
@@ -83,8 +83,8 @@ hr {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  gap: 1.5rem;
-  padding-block: 1.6rem;
+  gap: 2rem;
+  padding-block: 1.5rem;
   flex-wrap: wrap;
 }
 
@@ -117,7 +117,7 @@ hr {
 .home-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 6px;
+  column-gap: 8px;
   row-gap: 0.5rem;
   padding-bottom: 2rem;
 }
@@ -134,11 +134,11 @@ hr {
   color: var(--sage);
   font-weight: 700;
   font-size: 1.15rem;
-  padding: 1rem 0 2rem;
+  padding: 0.5rem 0 2rem;
 }
 
 .card:hover .card-img {
-  opacity: 0.92;
+  opacity: 0.70;
 }
 
 /* -------------------------------------------------------------- project --- */
@@ -241,7 +241,7 @@ hr {
   justify-content: center;
   position: relative;
   color: var(--tan);
-  padding-block: 2rem;
+  padding-block: 0.5rem;
   margin-top: 2rem;
 }
 
