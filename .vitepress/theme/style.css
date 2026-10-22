@@ -9,18 +9,18 @@
 
 :root {
   /* Brand colours */
-  --green: #0b6755; /* wordmark */
-  --sage: #a5baad; /* project titles, headings, captions */
-  --tan: #c9bda5; /* nav, footer, CV headings, hairlines */
-  --ink: #787268; /* body text */
-  --bg: #dbdbdb;
+  --green: #9fc418; /* wordmark */
+  --sage: #9fc418; /* project titles, headings, captions */
+  --tan: #3c1f0d; /* nav, footer, CV headings, hairlines */
+  --ink: #8fa894; /* body text */
+  --bg: #d2dcf5;
 
   /* Type */
   --font: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   /* Layout */
   --max-width: 1280px;
-  --gutter: 40px;
+  --gutter: 0px;
 }
 
 /* ------------------------------------------------------------------ base --- */
@@ -58,16 +58,16 @@ a {
 
 .heading-sage {
   color: var(--sage);
-  font-weight: 700;
-  font-size: clamp(1.9rem, 4vw, 2.7rem);
+  font-weight: 400;
+  font-size: clamp(2rem, 1.4vw, 1.25rem);
   line-height: 1.15;
-  margin: 0 0 1.5rem;
+  margin: 0 0 1rem;
 }
 
 .heading-tan {
   color: var(--tan);
-  font-weight: 700;
-  font-size: clamp(1.7rem, 3.5vw, 2.3rem);
+  font-weight: 400;
+  font-size: clamp(2rem, 1.4vw, 1.25rem);
   margin: 0 0 1.5rem;
 }
 
@@ -82,22 +82,22 @@ hr {
 .site-header {
   display: flex;
   align-items: baseline;
+  padding-bottom: 2rem;
+  flex-wrap: nowrap;
   justify-content: space-between;
-  gap: 2rem;
-  padding-block: 1.5rem;
-  flex-wrap: wrap;
 }
 
 .wordmark {
   color: var(--green);
-  font-weight: 700;
-  font-size: clamp(1.4rem, 3vw, 2rem);
-  letter-spacing: -0.01em;
+  font-weight: 400;
+  font-size: clamp(2rem, 1.4vw, 1.25rem);
+  letter-spacing: -0.01rem;
 }
 
 .site-nav {
   display: flex;
-  gap: clamp(1.2rem, 3vw, 2.4rem);
+  font-weight: 400;
+  gap: clamp(8rem, 3vw, 2.4rem);
   font-size: clamp(1rem, 1.4vw, 1.25rem);
 }
 
@@ -130,11 +130,10 @@ hr {
 
 .card-title {
   display: block;
-  text-align: center;
+  text-align: left;
   color: var(--sage);
-  font-weight: 700;
-  font-size: 1.15rem;
-  padding: 0.5rem 0 2rem;
+  font-size: clamp(1rem, 1.4vw, 1.25rem);
+  padding: 0.2rem 0 0.9rem;
 }
 
 .card:hover .card-img {
@@ -241,15 +240,17 @@ hr {
   justify-content: center;
   position: relative;
   color: var(--tan);
-  padding-block: 0.5rem;
-  margin-top: 2rem;
+  font-size: 0.7rem;
+  padding-block: 0.2rem;
+  margin-top: 0.2rem;
 }
 
 .site-footer .socials {
   position: absolute;
+  right: 0px;
   right: var(--gutter);
   display: inline-flex;
-  gap: 0.9rem;
+  gap: 0.5rem;
 }
 
 .site-footer .socials a {
