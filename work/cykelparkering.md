@@ -1,5 +1,6 @@
 ---
 title: Cykelparkering
+order: 10
 year: 2023
 description: "This project is the result of the observation of the many different bike parking stations spread among Copenhagen."
 cover: /work/cykelparkering/cover.jpg

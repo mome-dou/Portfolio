@@ -1,5 +1,6 @@
 ---
 title: Nebulo System
+order: 8
 year: 2019
 description: "Nebulo System is a Swiss start-up that developed an alarm system which, instead of a sound, releases a thick fog preventing the burglar from entering the house."
 cover: /work/nebulo-system/cover.jpg

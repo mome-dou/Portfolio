@@ -1,5 +1,6 @@
 ---
 title: Still Rolling
+order: 12
 year: 2019
 description: "Still Rolling is a redesign of the walking frame."
 cover: /work/still-rolling/cover.jpg

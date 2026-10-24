@@ -20,6 +20,7 @@ export default createContentLoader('work/*.md', {
         title: frontmatter.title,
         year: Number(frontmatter.year),
         cover: frontmatter.cover,
+        order: Number(frontmatter.order ?? Infinity),
       }))
-      .sort((a, b) => b.year - a.year || a.title.localeCompare(b.title)),
+      .sort((a, b) => a.order - b.order || b.year - a.year || a.title.localeCompare(b.title)),
 })

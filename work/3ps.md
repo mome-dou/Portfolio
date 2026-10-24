@@ -1,5 +1,6 @@
 ---
 title: 3Ps
+order: 5
 year: 2022
 description: "3Ps is my master thesis project."
 cover: /work/3ps/cover.jpg

@@ -1,5 +1,6 @@
 ---
 title: Sadji
+order: 1
 year: 2022
 description: "Sadji is a set for people who make their own makeup."
 cover: /work/sadji/cover.jpg

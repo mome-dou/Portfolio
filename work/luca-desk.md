@@ -1,5 +1,6 @@
 ---
 title: Luca Desk
+order: 6
 year: 2024
 description: "Evolutive desk that can grow from 50 cm desk height to 55 cm and 60 cm, following the child's first school years."
 cover: /work/luca-desk/cover.jpg

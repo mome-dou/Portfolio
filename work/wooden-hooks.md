@@ -1,5 +1,6 @@
 ---
 title: Wooden Hooks
+order: 9
 year: 2023
 description: "Colourful and playful wooden hooks for Cam Cam Copenhagen."
 cover: /work/wooden-hooks/cover.jpg

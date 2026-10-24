@@ -1,5 +1,6 @@
 ---
 title: København Natlampe
+order: 2
 year: 2025
 description: "Poetic children's night light, designed with Copenhagen's charming and intricate architecture in mind."
 cover: /work/kobenhavn-natlampe/cover.jpg

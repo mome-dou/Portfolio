@@ -1,5 +1,6 @@
 ---
 title: Weever
+order: 4
 year: 2021
 description: "Weever is an autonomous weed remover coupled with a lawnmower."
 cover: /work/weever/cover.jpg

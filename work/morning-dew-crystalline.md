@@ -1,5 +1,6 @@
 ---
 title: Morning Dew / Crystalline
+order: 3
 year: 2025
 description: "Morning Dew is a short brief project that aimed to understand more in depth the specificities of the eyewear industry."
 cover: /work/morning-dew-crystalline/cover.jpg

@@ -1,5 +1,6 @@
 ---
 title: Junior Cutlery
+order: 7
 year: 2023
 description: "Colourful and ergonomic cutlery for children."
 cover: /work/junior-cutlery/cover.jpg
