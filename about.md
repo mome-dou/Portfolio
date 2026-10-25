@@ -15,7 +15,7 @@ import { withBase } from 'vitepress'
 
 <div class="about-text">
 
-<h1 class="heading-sage">About me</h1>
+<h1 class="heading-tan">About me</h1>
 
 Hi! My name is Salomé, and I am a 27-year-old French industrial designer. After completing my bachelor's at ECAL in Lausanne, Switzerland, I moved to Kolding in Denmark to pursue a master's in IT product design at SDU, from which I graduated a couple of years ago. I have now been living and working in Copenhagen for three years and enjoy the culturally rich and dynamic city that inspires me in so many ways.
 
